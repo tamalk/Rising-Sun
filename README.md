@@ -1,2 +1,2 @@
 # Rising-Sun
-Rising Sun python code.
+Rising Sun translator python code.
