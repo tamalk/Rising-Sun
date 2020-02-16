@@ -78,7 +78,8 @@ while True:
                     dawnen.append(dic_daw[i])
                 else:
                     print("There is no translation for character " + i + " so it has been ignored.") #case default, error
-            dawnen_complete = ("").join(dawnen)
+            dawnen_complete_reverse = ("").join(dawnen)
+            dawnen_complete = dawnen_complete_reverse[: : -1]
             if (levels == 2):
                 print("")
                 print("Final translation: " + str(legtels) + str(cform) + dawnen_complete)
@@ -118,8 +119,8 @@ while True:
                 else:
                     print("There is no translation for character " + i + " so it has been ignored.")
                 local += 1
-            dawtrans_complete = ("").join(dawnentrans)
-
+            dawtrans_complete_reverse = ("").join(dawnentrans)
+            dawtrans_complete = dawtrans_complete_reverse[: : -1]
         if (leveli == 1):
             messlist.pop(0) #obtiene la primera D, que no va a retraducirse.
             noheadermessage = ("").join(messlist) #reconvierte la lista sin el elemento 0 (la cabecera) a cadena de texto.
